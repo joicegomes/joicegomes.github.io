@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-lang="pt">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Joice Genaro Gomes</title>
+<meta name="description" content="Joice Genaro Gomes — arquiteta e urbanista, professora da FAU-USP (Métodos Quantitativos). Análise espacial e indicadores de vulnerabilidade para políticas públicas.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🗺️</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&family=Public+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#FAFAF7; --ink:#1B2F4B; --muted:#56657A; --rule:#DCE1E4; --link:#1F5A6E;
+    --r1:#EEF0CF; --r2:#BFDBA3; --r3:#6FAE8A; --r4:#2F7E7C; --r5:#1F4F6B;
+    --serif:"Newsreader", Georgia, "Times New Roman", serif;
+    --sans:"Public Sans", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{ --bg:#111A24; --ink:#E6ECF0; --muted:#9FB0BF; --rule:#2A3847; --link:#8FD1C0; }
+  }
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{margin:0;background:var(--bg);color:var(--ink);font:400 1.0625rem/1.6 var(--sans);
+       padding:env(safe-area-inset-top,0) 0 env(safe-area-inset-bottom,0)}
+  a{color:var(--link);text-underline-offset:.18em;text-decoration-thickness:1px}
+  a:hover{text-decoration-thickness:2px}
+  a:focus-visible,button:focus-visible{outline:2px solid var(--link);outline-offset:3px;border-radius:2px}
+
+  /* bilíngue */
+  html[data-lang="pt"] [lang="en"], html[data-lang="en"] [lang="pt"]{display:none}
+
+  .wrap{max-width:66rem;margin:0 auto;padding:0 1.5rem}
+  .top{display:flex;justify-content:flex-end;padding-top:1.25rem}
+  .lang{display:flex;border:1px solid var(--rule);border-radius:999px;overflow:hidden}
+  .lang button{font:500 .8125rem var(--sans);background:none;color:var(--muted);border:0;padding:.35rem .8rem;cursor:pointer}
+  .lang button[aria-pressed="true"]{background:var(--ink);color:var(--bg)}
+
+  /* hero */
+  .hero{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr);gap:3rem;align-items:center;padding:3rem 0 3.5rem}
+  .id{display:flex;gap:1.25rem;align-items:center;margin-bottom:1.75rem}
+  .id img{width:84px;height:84px;border-radius:50%;object-fit:cover;background:var(--rule)}
+  h1{font:500 clamp(2.4rem,5.5vw,3.6rem)/1.02 var(--serif);letter-spacing:-.015em;margin:0}
+  .role{font-size:1.125rem;color:var(--muted);max-width:32rem;margin:0}
+  .role strong{color:var(--ink);font-weight:500}
+  .place{margin-top:1rem;font-size:.9375rem;color:var(--muted)}
+
+  figure.map{margin:0}
+  figure.map svg{width:100%;height:auto;display:block}
+  .legend{display:flex;align-items:center;gap:.6rem;font-size:.8125rem;color:var(--muted);margin-top:.5rem}
+  .ramp{display:flex;height:.55rem;width:9rem}
+  .ramp i{flex:1}
+  figcaption{font-size:.8125rem;color:var(--muted);margin-top:.35rem;max-width:30rem}
+
+  /* corpo */
+  main section{display:grid;grid-template-columns:12rem minmax(0,1fr);gap:2rem;padding:2.25rem 0;border-top:1px solid var(--rule)}
+  h2{font:500 1.35rem/1.25 var(--serif);margin:0}
+  .body{max-width:40rem}
+  .body p{margin:0 0 1rem}
+  .body p:last-child{margin-bottom:0}
+  h3{font:600 1rem/1.35 var(--sans);margin:0 0 .25rem}
+
+  .lines{list-style:none;margin:0;padding:0;display:grid;gap:1.5rem}
+  .lines li{display:grid;grid-template-columns:.9rem 1fr;gap:1rem}
+  .lines .sw{width:.9rem;height:.9rem;margin-top:.3rem}
+  .lines p{margin:0;color:var(--muted)}
+
+  .project{font:400 1.3rem/1.4 var(--serif);margin:0 0 1rem}
+
+  .courses{list-style:none;margin:0;padding:0}
+  .courses li{display:grid;grid-template-columns:5.5rem 1fr;gap:1rem;padding:.55rem 0;border-bottom:1px solid var(--rule)}
+  .courses li:last-child{border-bottom:0}
+  .code{font-variant-numeric:tabular-nums;color:var(--muted);font-size:.9375rem}
+  .note{color:var(--muted);font-size:.9375rem;margin-top:1rem}
+
+  .links{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:.75rem 1.75rem}
+  .links a{font-weight:500}
+
+  footer{border-top:1px solid var(--rule);padding:1.5rem 0 2.5rem;font-size:.8125rem;color:var(--muted)}
+
+  @media (max-width:760px){
+    .hero{grid-template-columns:1fr;gap:2rem;padding-top:1.5rem}
+    main section{grid-template-columns:1fr;gap:.9rem}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="top">
+    <div class="lang" role="group" aria-label="Idioma / Language">
+      <button type="button" data-set="pt" aria-pressed="true">PT</button>
+      <button type="button" data-set="en" aria-pressed="false">EN</button>
+    </div>
+  </div>
+
+  <header class="hero">
+    <div>
+      <div class="id">
+        <img src="foto.jpg" alt="Foto de Joice Genaro Gomes">
+      </div>
+      <h1>Joice Genaro Gomes</h1>
+      <p class="role" style="margin-top:1.1rem">
+        <span lang="pt">Arquiteta e urbanista. <strong>Professora doutora da FAU-USP</strong>, Departamento de Tecnologia, área de Métodos Quantitativos.</span>
+        <span lang="en">Architect and urban planner. <strong>Assistant Professor at FAU-USP</strong>, Department of Technology, Quantitative Methods.</span>
+      </p>
+      <p class="place">
+        <span lang="pt">São Paulo, Brasil</span><span lang="en">São Paulo, Brazil</span>
+      </p>
+    </div>
+
+    <figure class="map">
+      <svg id="hexmap" viewBox="0 0 520 380" role="img" aria-label="Mapa ilustrativo em hexágonos com gradiente de vulnerabilidade"></svg>
+      <div class="legend" aria-hidden="true">
+        <span lang="pt">menor</span><span lang="en">lower</span>
+        <span class="ramp"><i style="background:var(--r1)"></i><i style="background:var(--r2)"></i><i style="background:var(--r3)"></i><i style="background:var(--r4)"></i><i style="background:var(--r5)"></i></span>
+        <span lang="pt">maior vulnerabilidade</span><span lang="en">higher vulnerability</span>
+      </div>
+      <figcaption>
+        <span lang="pt">Ilustração: um território dividido em células, cada uma classificada por um índice sintético.</span>
+        <span lang="en">Illustration: a territory split into cells, each classified by a composite index.</span>
+      </figcaption>
+    </figure>
+  </header>
+
+  <main>
+    <section id="sobre">
+      <h2><span lang="pt">Sobre</span><span lang="en">About</span></h2>
+      <div class="body">
+        <p lang="pt">Trabalho com análise espacial e construção de indicadores para responder a uma pergunta prática: quais territórios devem ser priorizados pelas políticas públicas? Minha pesquisa cruza dados de habitação, saúde, segurança alimentar e meio ambiente, combinando fontes censitárias, registros administrativos e dados de observação da Terra.</p>
+        <p lang="en">I work with spatial analysis and indicator design to answer a practical question: which territories should public policy prioritise? My research combines housing, health, food security and environmental data, drawing on census sources, administrative records and Earth observation.</p>
+      </div>
+    </section>
+
+    <section id="pesquisa">
+      <h2><span lang="pt">Pesquisa</span><span lang="en">Research</span></h2>
+      <div class="body">
+        <ul class="lines">
+          <li><span class="sw" style="background:var(--r5)"></span><div>
+            <h3><span lang="pt">Moradia e saúde</span><span lang="en">Housing and health</span></h3>
+            <p lang="pt">No doutorado, integrei dados territoriais e de saúde para apoiar a priorização de intervenções habitacionais.</p>
+            <p lang="en">My doctoral research integrated territorial and health data to support the prioritisation of housing interventions.</p>
+          </div></li>
+          <li><span class="sw" style="background:var(--r4)"></span><div>
+            <h3><span lang="pt">Insegurança alimentar urbana</span><span lang="en">Urban food insecurity</span></h3>
+            <p lang="pt">No pós-doutorado, estudei a distribuição territorial da insegurança alimentar em cidades brasileiras, em colaboração com o INCT Combate à Fome.</p>
+            <p lang="en">As a postdoc, I studied the spatial distribution of food insecurity in Brazilian cities, in collaboration with INCT Combate à Fome.</p>
+          </div></li>
+          <li><span class="sw" style="background:var(--r3)"></span><div>
+            <h3><span lang="pt">Vulnerabilidade socioambiental e clima</span><span lang="en">Socio-environmental and climate vulnerability</span></h3>
+            <p lang="pt">Cobertura vegetal, temperatura de superfície e dados de satélite para entender onde os riscos climáticos se sobrepõem às desigualdades sociais.</p>
+            <p lang="en">Vegetation cover, land surface temperature and satellite data to understand where climate risks overlap with social inequality.</p>
+          </div></li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="projeto">
+      <h2><span lang="pt">Projeto atual</span><span lang="en">Current project</span></h2>
+      <div class="body">
+        <p class="project" lang="pt">Como identificar territórios prioritários para as políticas públicas? Indicadores espaço-temporais multidimensionais de vulnerabilidade aplicados a cidades brasileiras</p>
+        <p class="project" lang="en">How to identify priority territories for public policy? Multidimensional spatio-temporal vulnerability indicators applied to Brazilian cities</p>
+        <p lang="pt">Um framework único, com a habitação como eixo central, aplicado a São Paulo e Salvador para comparar como as dimensões de vulnerabilidade se comportam em dois contextos metropolitanos distintos.</p>
+        <p lang="en">A single framework, centred on housing, applied to São Paulo and Salvador to compare how dimensions of vulnerability behave in two distinct metropolitan contexts.</p>
+      </div>
+    </section>
+
+    <section id="ensino">
+      <h2><span lang="pt">Ensino</span><span lang="en">Teaching</span></h2>
+      <div class="body">
+        <ul class="courses">
+          <li><span class="code">AUT0516</span><span>Métodos Quantitativos Aplicados à Arquitetura, Urbanismo e Planejamento Urbano</span></li>
+          <li><span class="code">AUT0518</span><span>Projeto de Custos</span></li>
+          <li><span class="code">AUT0520</span><span>Prática Profissional e Organização do Trabalho</span></li>
+          <li><span class="code">AUT0581</span><span>O Mercado Imobiliário e a Intervenção Pública <span class="code" lang="pt">(pós-graduação, colaboração)</span><span class="code" lang="en">(graduate, co-teaching)</span></span></li>
+        </ul>
+        <p class="note" lang="pt">Também oriento Trabalhos Finais de Graduação e coorientei pesquisa de mestrado no PPG em Geografia da UFSCar.</p>
+        <p class="note" lang="en">I also supervise undergraduate final projects and co-supervise a master's thesis in Geography at UFSCar.</p>
+      </div>
+    </section>
+
+    <section id="links">
+      <h2><span lang="pt">Currículo e contato</span><span lang="en">CV and contact</span></h2>
+      <div class="body">
+        <ul class="links">
+          <li><a href="http://lattes.cnpq.br/7888070775070125">Lattes</a></li>
+          <li><a href="https://orcid.org/0000-0003-1535-0583">ORCID</a></li>
+          <li><a href="https://www.researchgate.net/profile/Joice-Genaro-Gomes">ResearchGate</a></li>
+          <li><a href="mailto:joicegenaro@usp.br">joicegenaro@usp.br</a></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <span lang="pt">FAU-USP · Rua do Lago, 876, Cidade Universitária, São Paulo</span>
+    <span lang="en">FAU-USP · Rua do Lago, 876, Cidade Universitária, São Paulo, Brazil</span>
+  </footer>
+</div>
+
+<script>
+/* troca de idioma */
+(function(){
+  const root=document.documentElement, btns=document.querySelectorAll('.lang button');
+  function set(l){
+    root.dataset.lang=l; root.lang = l==='pt' ? 'pt-BR' : 'en';
+    btns.forEach(b=>b.setAttribute('aria-pressed', b.dataset.set===l));
+    try{localStorage.setItem('lang',l)}catch(e){}
+  }
+  let saved=null; try{saved=localStorage.getItem('lang')}catch(e){}
+  if(saved==='en'||saved==='pt') set(saved);
+  btns.forEach(b=>b.addEventListener('click',()=>set(b.dataset.set)));
+})();
+
+/* mapa ilustrativo em hexágonos */
+(function(){
+  const svg=document.getElementById('hexmap'), NS='http://www.w3.org/2000/svg';
+  let s=7; const rnd=()=>(s=(s*16807)%2147483647)/2147483647;   // semente fixa: mesmo desenho sempre
+  const R=11, W=Math.sqrt(3)*R, cx=260, cy=190;
+  const bumps=[[0.95,0.05,1],[0.9,0.55,0.9],[0.15,0.85,0.8],[0.5,0.5,-0.9],[0.35,0.2,0.4]];
+  const cells=[];
+  for(let row=-9; row<=9; row++){
+    for(let col=-13; col<=13; col++){
+      const x=cx+col*W+(row&1?W/2:0), y=cy+row*R*1.5;
+      const dx=(x-cx)/230, dy=(y-cy)/165;
+      const ang=Math.atan2(dy,dx), rim=0.82+0.14*Math.sin(3*ang+1)+0.08*Math.cos(5*ang);
+      if(dx*dx+dy*dy > rim*rim) continue;
+      const u=(x-30)/460, v=(y-25)/330;
+      let val=0; bumps.forEach(([bx,by,w])=>{val+=w*Math.exp(-((u-bx)**2+(v-by)**2)/0.09)});
+      val+=0.25*Math.sqrt(dx*dx+dy*dy)+ (rnd()-0.5)*0.35;
+      cells.push({x,y,val,d:Math.hypot(dx,dy)});
+    }
+  }
+  const sorted=cells.map(c=>c.val).sort((a,b)=>a-b);
+  const q=[.2,.4,.6,.8].map(p=>sorted[Math.floor(p*sorted.length)]);
+  const colors=['--r1','--r2','--r3','--r4','--r5'];
+  const reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const pts=(x,y)=>Array.from({length:6},(_,i)=>{const a=Math.PI/180*(60*i-30);return (x+(R-0.8)*Math.cos(a)).toFixed(1)+','+(y+(R-0.8)*Math.sin(a)).toFixed(1)}).join(' ');
+  cells.forEach(c=>{
+    const k=q.filter(t=>c.val>t).length, p=document.createElementNS(NS,'polygon');
+    p.setAttribute('points',pts(c.x,c.y));
+    p.setAttribute('fill',`var(${colors[k]})`);
+    if(!reduce){p.style.opacity=0;p.style.transition=`opacity .5s ease ${(c.d*900).toFixed(0)}ms`;}
+    svg.appendChild(p); c.el=p;
+  });
+  if(!reduce) requestAnimationFrame(()=>requestAnimationFrame(()=>cells.forEach(c=>c.el.style.opacity=1)));
+})();
+</script>
+</body>
+</html>
